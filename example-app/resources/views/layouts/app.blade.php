@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     @include('includes.meta')
 
@@ -11,13 +12,14 @@
     @stack('before-style')
     <!-- style -->
     @include('includes.style')
-    
+
     @stack('after-style')
 </head>
+
 <body>
-    
-    @include('includes.headers')
-        @yield('content')
+
+    @include('includes.header')
+    @yield('content')
     @include('includes.footer')
 
     @stack('before-script')
@@ -25,6 +27,7 @@
     @include('includes.script')
 
     @stack('after-script')
-    
+
 </body>
+
 </html>
