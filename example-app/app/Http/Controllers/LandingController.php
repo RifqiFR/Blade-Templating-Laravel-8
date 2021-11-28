@@ -81,4 +81,26 @@ class LandingController extends Controller
     {
         //
     }
+
+    //custom
+
+    public function clubs()
+    {
+        return view('pages.landing-page.clubs');
+    }
+
+    public function players()
+    {
+        return view('pages.landing-page.players');
+    }
+
+    public function managers()
+    {
+        return view('pages.landing-page.managers');
+    }
+
+    public function stadiums()
+    {
+        return view('pages.landing-page.stadiums');
+    }
 }
